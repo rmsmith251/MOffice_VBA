@@ -1,0 +1,30 @@
+# Loops through columns in the row that's clicked and opens all hyperlinks.
+
+Private Sub Worksheet_BeforeDoubleClick(ByVal Target As Range, Cancel As Boolean)
+
+Call FilterHTListByTP
+
+End Sub
+
+Sub FilterHTListByTP()
+Application.ScreenUpdating = False
+Dim CurrentTP As Variant
+Dim currentcolumn As Variant
+Dim i As Long
+Dim Table1 As ListObject
+Dim Table2 As ListObject
+
+CurrentTP = Cells(ActiveCell.Row, 1).Value
+currentcolumn = ActiveCell.Column
+'Debug.Print CurrentTP
+    ActiveWorkbook.Sheets("ISO ET Database").Activate
+    Set Table1 = ActiveSheet.ListObjects(1)
+    'Debug.Print Table1
+    If (ActiveSheet.AutoFilterMode And ActiveSheet.FilterMode) Or ActiveSheet.FilterMode Then
+        Table1.AutoFilter.ShowAllData
+    End If
+    Table1.Range. _
+        AutoFilter Field:=currentcolumn + 4, Criteria1:=CurrentTP
+        
+Application.ScreenUpdating = True
+End Sub
