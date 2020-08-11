@@ -1,5 +1,5 @@
-# The following function was developed by a colleague of mine: Sam Adams.
-# This was used by our site to scrape data from the Word documents by cycling through each one via hyperlinks.
+' The following function was developed by a colleague of mine: Sam Adams.
+' This was used by our site to scrape data from the Word documents by cycling through each one via hyperlinks.
 
 Sub TP_Rev_Build()
 Dim TMP_folder As String
