@@ -1,4 +1,4 @@
-# The following function is used to create a double click action that filters a separate table based on the row/column.
+' The following function is used to create a double click action that filters a separate table based on the row/column.
 
 Private Sub Worksheet_BeforeDoubleClick(ByVal Target As Range, Cancel As Boolean)
 
