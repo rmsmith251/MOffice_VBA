@@ -1,4 +1,4 @@
-# Source: http://www.vbaexpress.com/forum/showthread.php?47310-Need-code-to-merge-PDF-files-in-a-folder-using-adobe-acrobat-X
+' Source: http://www.vbaexpress.com/forum/showthread.php?47310-Need-code-to-merge-PDF-files-in-a-folder-using-adobe-acrobat-X
 
 Sub MergePDFs(MyPath As String, MyFiles As String, Optional DestFile As String = "00_TPMergedFile.pdf")
 ' ZVI:2013-08-27 http://www.vbaexpress.com/forum/showthread.php?47310-Need-code-to-merge-PDF-files-in-a-folder-using-adobe-acrobat-X
