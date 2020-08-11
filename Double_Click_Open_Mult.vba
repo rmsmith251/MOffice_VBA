@@ -1,4 +1,4 @@
-# Loops through columns in the row that's clicked and opens all hyperlinks.
+'Loops through columns in the row that's clicked and opens all hyperlinks.
 
 Option Explicit
 
