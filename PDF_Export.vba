@@ -1,5 +1,5 @@
-# Another function developed by my colleague Sam Adams.
-# This pulls PDFs from provided hyperlinks.
+' Another function developed by my colleague Sam Adams.
+' This pulls PDFs from provided hyperlinks.
 
 Sub Full_TP_Export()
 Dim rng As Range
